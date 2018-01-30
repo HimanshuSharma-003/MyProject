@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/runner3"
+    tools:context="fitnesstracker.com.fitnessapplication.LogInActivity">
+
+    <ImageView
+        android:id="@+id/ImageId"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        app:srcCompat="@drawable/fitnesslogo"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageId"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Fitness Tracker"
+        android:textColor="#322d91"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:id="@+id/MessageId" />
+
+    <EditText
+        android:id="@+id/SignInId"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/SignInButtonId"
+        android:layout_below="@+id/MessageId"
+        android:layout_marginTop="41dp"
+        android:drawableLeft="@drawable/ic_action_email2"
+        android:ems="10"
+        android:hint="Username/Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#4e4d4d"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/SignInPasswordId"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/SignInId"
+        android:layout_below="@+id/SignInId"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/ic_action_pass2"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#4e4d4d"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/NewRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:lineSpacingExtra="8sp"
+        android:text="new user? sign up here.."
+        android:textAlignment="center"
+        android:textColor="#CFD8DC"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/SignInButtonId"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/SignInPasswordId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundedbutton"
+        android:elevation="10dp"
+        android:text="Log In"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
