@@ -59,6 +59,8 @@ class LogInActivity : AppCompatActivity() {
 
                     Log.d("User",user.email.toString())
                     Toast.makeText(this,"Successfully Login.", Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this, MapsActivity :: class.java))
+                    finish()
                 }
                 else{
                     Toast.makeText(this,"Login failed.", Toast.LENGTH_LONG).show()

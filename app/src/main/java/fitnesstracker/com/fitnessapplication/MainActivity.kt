@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                 var user = firebaseAuth.currentUser
                 if (user != null){
                     // go the Map Dashboard
-//                    startActivity(Intent(this, MainMapActivity :: class.java))
+                    startActivity(Intent(this, MapsActivity :: class.java))
                     finish()
                 }
             else{
@@ -38,10 +38,6 @@ class MainActivity : AppCompatActivity() {
                 }
         }
 
-        MainActStartButton.setOnClickListener {
-            var intent = Intent(this,LogInActivity::class.java)
-            startActivity(intent)
-        }
     }
 
     override fun onStart() {
